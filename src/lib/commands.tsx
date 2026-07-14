@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { Mail, Phone, Linkedin, MapPin, Briefcase } from 'lucide-react'
 import { profileData } from './profileData'
-import profilePhoto from '../../public/profile_photo.png'
+import profilePhoto from '../assets/profile_photo.png'
 function highlightTech(text: string): ReactNode {
   const targets = [
     'Distributed Systems', 'Python', 'TensorFlow', 'Pytorch', 'Go', 'React.js',

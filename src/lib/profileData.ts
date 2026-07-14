@@ -1,3 +1,15 @@
+import projectBekenspot1 from '../assets/project_bekenspot_1783999547036.png'
+import media1783991737588 from '../assets/media__1783991737588.png'
+import media1783991757153 from '../assets/media__1783991757153.png'
+
+import projectMinat1 from '../assets/project_minat_1783999555837.png'
+import media1783991800642 from '../assets/media__1783991800642.png'
+import media1783991812528 from '../assets/media__1783991812528.png'
+
+import projectEmotion1 from '../assets/project_emotion_1783999566030.png'
+
+import projectMidhub1 from '../assets/project_midhub_1783999576343.png'
+
 export const profileData = {
   name: 'Filbert Christian Winch',
   title: 'Full-Stack Engineer | ML Researcher | Product Engineer | DevOps Engineer',
@@ -101,9 +113,9 @@ Beyond programming, I bring a natural affinity for public speaking and communica
       tech: 'Go, React, Svelte',
       description: 'A centralized workspace reservation engine with a high-performance Go backend, capturing over 5,000 active reservations within three months for 100 staff and student users.',
       images: [
-        '/project_bekenspot_1783999547036.png',
-        '/media__1783991737588.png',
-        '/media__1783991757153.png'
+        projectBekenspot1,
+        media1783991737588,
+        media1783991757153
       ],
       longDescription: 'Bekenspot is a modern, high-performance workspace booking platform designed for academic and corporate environments. Built with a robust Go backend and a highly interactive Svelte frontend, the platform streamlines the reservation process for student study rooms, computer labs, and office workspaces.',
       keyFeatures: [
@@ -118,9 +130,9 @@ Beyond programming, I bring a natural affinity for public speaking and communica
       tech: 'React, Go',
       description: 'Career assessment platform serving ten regional schools, capturing over 1,000 distinct career assessment profiles.',
       images: [
-        '/project_minat_1783999555837.png',
-        '/media__1783991800642.png',
-        '/media__1783991812528.png'
+        projectMinat1,
+        media1783991800642,
+        media1783991812528
       ],
       longDescription: 'Minat Apps is an educational utility designed to guide middle and high school students in Jakarta through psychometric evaluation. It maps their interests, academic achievements, and personality types into concrete university major and career path recommendations.',
       keyFeatures: [
@@ -135,8 +147,8 @@ Beyond programming, I bring a natural affinity for public speaking and communica
       tech: 'Python, FFT, ML',
       description: 'Advanced emotion-detection analysis using Fast Fourier Transform (FFT) algorithms. Published in ICCSCI 2026 proceedings.',
       images: [
-        '/project_emotion_1783999566030.png',
-        '/project_bekenspot_1783999547036.png'
+        projectEmotion1,
+        projectBekenspot1
       ],
       longDescription: 'This research project explores automated human emotion classification through biosensors. By utilizing Fast Fourier Transform (FFT) signal processing algorithms, we extract key frequency-domain features from physiological signals to feed into a custom Machine Learning classifier.',
       keyFeatures: [
@@ -151,8 +163,8 @@ Beyond programming, I bring a natural affinity for public speaking and communica
       tech: 'NestJS, Prisma, PostgreSQL, Docker',
       description: 'Full-stack membership & campaign management platform with REST APIs, automated cron jobs, and CI/CD pipelines.',
       images: [
-        '/project_midhub_1783999576343.png',
-        '/project_minat_1783999555837.png'
+        projectMidhub1,
+        projectMinat1
       ],
       longDescription: 'Midhub is a comprehensive enterprise membership and promotional campaign management system. Developed for Uniteda Arkato, the application processes heavy customer data flows, coordinates complex subscription lifecycles, and automates marketing campaigns.',
       keyFeatures: [

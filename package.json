@@ -5,12 +5,15 @@
   "imports": {
     "#/*": "./src/*"
   },
+  "homepage": "https://winchfilbert.github.io/Filbert-Portfolio-TUI",
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/client"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -35,6 +38,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^6.0.1",
+    "gh-pages": "^6.3.0",
     "jsdom": "^28.1.0",
     "typescript": "^6.0.2",
     "vite": "^8.0.0",
