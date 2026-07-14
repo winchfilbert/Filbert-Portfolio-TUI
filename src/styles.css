@@ -1008,13 +1008,12 @@ body,
 }
 
 .welcome-photo {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 12px;
   border: 1px solid var(--term-border);
   object-fit: cover;
   flex-shrink: 0;
-  margin-top: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
