@@ -31,14 +31,6 @@ export type CommandResult = {
   clear?: boolean
 }
 
-const ASCII_NAME = `
- ███████╗██╗██╗     ██████╗ ███████╗██████╗ ████████╗
- ██╔════╝██║██║     ██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
- █████╗  ██║██║     ██████╔╝█████╗  ██████╔╝   ██║   
- ██╔══╝  ██║██║     ██╔══██╗██╔══╝  ██╔══██╗   ██║   
- ██║     ██║███████╗██████╔╝███████╗██║  ██║   ██║   
- ╚═╝     ╚═╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝`.trimStart()
-
 const NEOFETCH_ART = `
     ⠀⠀⠀⠀⠀⠀⣀⣤⣶⣿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣀⠀⠀⠀
@@ -77,15 +69,23 @@ export function getWelcomeBanner(): ReactNode {
   const quickLinks = ['about', 'experience', 'skills', 'projects', 'contact']
   
   return (
-    <div className="output-block">
-      <div className="ascii-art">{ASCII_NAME}</div>
-      <div className="output-section">
-        <span className="text-green text-bold">{profileData.name}</span>
-        <span className="text-gray"> — </span>
-        <span className="text-white">{profileData.title}</span>
-      </div>
-      <div className="text-gray" style={{ marginBottom: '12px' }}>
-        Welcome to my interactive terminal portfolio v1.0.0
+    <div className="output-block welcome-block">
+      <div className="welcome-layout">
+        <div className="welcome-main">
+          <h1 className="welcome-name">FILBERT CHRISTIAN WINCH</h1>
+          <div className="output-section text-gray" style={{ fontSize: '12px', marginTop: '4px' }}>
+            {profileData.title}
+          </div>
+          <div className="text-gray" style={{ marginBottom: '12px', fontSize: '13px' }}>
+            Welcome to my interactive terminal portfolio v1.0.0
+          </div>
+        </div>
+        <img 
+          src={profilePhoto} 
+          alt="Profile" 
+          className="welcome-photo cursor-pointer transition-transform hover:scale-105" 
+          onClick={() => window.dispatchEvent(new CustomEvent('open-lightbox', { detail: profilePhoto }))}
+        />
       </div>
       
       <div className="text-white" style={{ marginBottom: '12px' }}>
@@ -457,6 +457,7 @@ function renderNeofetch(): ReactNode {
     </div>
   )
 }
+
 
 function renderVolunteering(): ReactNode {
   return (

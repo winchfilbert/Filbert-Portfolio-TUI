@@ -993,3 +993,62 @@ body,
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(153, 255, 228, 0.05);
 }
+
+/* Welcome Banner Photo Layout */
+.welcome-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.welcome-main {
+  flex: 1;
+}
+
+.welcome-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  border: 1px solid var(--term-border);
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .welcome-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcome-photo {
+    width: 90px;
+    height: 90px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.welcome-name {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--term-green);
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+  /* Soft neon terminal style glow */
+  text-shadow: 0 0 8px var(--term-green-glow);
+}
+
+@media (max-width: 600px) {
+  .welcome-name {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+}
